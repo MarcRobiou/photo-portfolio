@@ -655,33 +655,117 @@ img {
   }
 
   .showcase-card {
-    padding: 1.35rem;
+    padding: 1.4rem 1.2rem 1.7rem;
     border-radius: 16px;
   }
 
+  .topbar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.15rem;
+  }
+
+  .brand-mark {
+    align-items: center;
+    min-width: auto;
+    text-align: center;
+    transform: none;
+  }
+
+  .brand-name {
+    font-size: 2.15rem;
+  }
+
+  .brand-name-bottom {
+    margin-top: -0.28rem;
+  }
+
   .menu-links {
-    gap: 1rem 1.5rem;
-    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 0.92rem;
+  }
+
+  .menu-links button {
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    background: #f3f0eb;
   }
 
   .showcase-copy {
-    padding-top: 1rem;
+    min-height: auto;
+    padding: 1.25rem 0 0.25rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .eyebrow {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .showcase-copy h1 {
+    max-width: 100%;
+    font-size: clamp(3.9rem, 17vw, 5.1rem);
+    line-height: 0.9;
   }
 
   .photo-mosaic {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 170px);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px 120px 170px 130px;
+    gap: 10px;
+    margin-top: 1.3rem;
   }
 
-  .photo-a,
-  .photo-b,
-  .photo-c,
-  .photo-d,
-  .photo-e,
+  .photo {
+    border-radius: 24px;
+    box-shadow: 0 18px 32px rgba(22, 18, 35, 0.08);
+  }
+
+  .photo-a {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border-radius: 28px 18px 18px 18px;
+  }
+
+  .photo-b {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+    transform: translateY(22px);
+    border-radius: 22px 22px 30px 22px;
+  }
+
+  .photo-c {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    transform: translateY(18px);
+    border-radius: 26px 18px 18px 18px;
+  }
+
+  .photo-d {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+    border-radius: 18px 28px 18px 18px;
+  }
+
+  .photo-e {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 2;
+    transform: translateY(-8px);
+    border-radius: 24px 18px 30px 18px;
+  }
+
   .photo-f {
-    grid-column: auto;
-    grid-row: auto;
-    border-radius: 20px;
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    transform: translateY(-6px);
+    border-radius: 20px 20px 30px 20px;
+  }
+
+  .photo-f img {
+    transform: scale(1.18);
+    object-position: center 62%;
   }
 
   .scroll-indicator {
