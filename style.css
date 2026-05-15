@@ -82,69 +82,31 @@ img {
 }
 
 .brand-mark {
-  min-width: 104px;
-  height: 46px;
-  display: inline-grid;
-  grid-template-columns: auto 18px auto auto;
-  align-items: center;
+  min-width: 112px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: start;
-  column-gap: 0.18rem;
   position: relative;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.15rem;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  transform: translateY(-1px);
+  line-height: 0.82;
+  transform: translateY(-2px);
 }
 
-.brand-letter {
-  display: inline-block;
-  position: relative;
+.brand-name {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  white-space: nowrap;
 }
 
-.brand-letter-m {
-  font-weight: 600;
-  letter-spacing: -0.05em;
+.brand-name-top {
+  margin-left: 0.02em;
 }
 
-.brand-letter-r {
-  font-style: italic;
-  transform: translateX(-3px);
-  letter-spacing: -0.04em;
-}
-
-.brand-divider {
-  width: 18px;
-  height: 1px;
-  background: currentColor;
-  justify-self: center;
-  opacity: 0.55;
-  transform: translateY(1px);
-  position: relative;
-}
-
-.brand-divider::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: currentColor;
-  transform: translate(-50%, -50%);
-}
-
-.brand-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: currentColor;
-  align-self: center;
-  margin-left: 0.05rem;
-  margin-top: 0.9rem;
-  opacity: 0.9;
+.brand-name-bottom {
+  margin-top: -0.18rem;
 }
 
 .menu-links {
