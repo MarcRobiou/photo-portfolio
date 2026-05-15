@@ -18,18 +18,17 @@
     <section class="showcase-card">
       <nav class="topbar">
         <a class="brand-mark" href="#" aria-label="Home">
-          <span></span>
+          <span class="brand-letter brand-letter-m">M</span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-letter brand-letter-r">R</span>
+          <span class="brand-dot" aria-hidden="true"></span>
         </a>
 
         <div class="menu-links">
-          <a href="#">Awards</a>
-          <a href="#">Shots</a>
-          <a href="#">Blog</a>
-          <a href="#">Who we are</a>
-          <a href="#">Find us</a>
+          <button class="shots-trigger" type="button" data-open-shots>Shots</button>
+          <button class="about-trigger" type="button" data-open-about>About me</button>
+          <button class="find-trigger" type="button" data-open-find>Find me</button>
         </div>
-
-        <a class="contact-link" href="tel:+18297637272">+1 829 763 7272</a>
       </nav>
 
       <div class="showcase-grid">
@@ -62,5 +61,171 @@
       </div>
     </section>
   </main>
+
+  <section class="shots-panel" aria-hidden="true" data-shots-panel>
+    <div class="shots-backdrop" data-close-shots></div>
+    <div class="shots-dialog" role="dialog" aria-modal="true" aria-labelledby="shots-title">
+      <div class="shots-header">
+        <p class="shots-kicker">selected works</p>
+        <div class="shots-heading-row">
+          <h2 id="shots-title">Shots</h2>
+          <button class="shots-close" type="button" aria-label="Close gallery" data-close-shots>Close</button>
+        </div>
+      </div>
+
+      <div class="shots-groups">
+        <section class="shots-group">
+          <div class="shots-group-head">
+            <p>01</p>
+            <h3>City</h3>
+          </div>
+          <div class="shots-gallery shots-gallery-city">
+            <figure class="shots-item tall"><img src="assets/city/photo1.jpg" alt="City photo 1"></figure>
+            <figure class="shots-item"><img src="assets/city/photo2.jpg" alt="City photo 2"></figure>
+            <figure class="shots-item wide"><img src="assets/city/photo3.jpg" alt="City photo 3"></figure>
+            <figure class="shots-item"><img src="assets/city/photo4.jpg" alt="City photo 4"></figure>
+            <figure class="shots-item"><img src="assets/city/photo5.jpg" alt="City photo 5"></figure>
+            <figure class="shots-item tall"><img src="assets/city/photo6.jpg" alt="City photo 6"></figure>
+            <figure class="shots-item"><img src="assets/city/photo7.jpg" alt="City photo 7"></figure>
+            <figure class="shots-item wide"><img src="assets/city/photo8.jpg" alt="City photo 8"></figure>
+          </div>
+        </section>
+
+        <section class="shots-group">
+          <div class="shots-group-head">
+            <p>02</p>
+            <h3>Flowers</h3>
+          </div>
+          <div class="shots-gallery shots-gallery-flowers">
+            <figure class="shots-item wide"><img src="assets/flowers/photo1.jpg" alt="Flowers photo 1"></figure>
+            <figure class="shots-item tall"><img src="assets/flowers/photo2.jpg" alt="Flowers photo 2"></figure>
+            <figure class="shots-item"><img src="assets/flowers/photo3.jpg" alt="Flowers photo 3"></figure>
+            <figure class="shots-item"><img src="assets/flowers/photo4.jpg" alt="Flowers photo 4"></figure>
+            <figure class="shots-item tall"><img src="assets/flowers/photo5.jpg" alt="Flowers photo 5"></figure>
+            <figure class="shots-item wide"><img src="assets/flowers/photo6.jpg" alt="Flowers photo 6"></figure>
+            <figure class="shots-item"><img src="assets/flowers/photo7.jpg" alt="Flowers photo 7"></figure>
+            <figure class="shots-item"><img src="assets/flowers/photo8.jpg" alt="Flowers photo 8"></figure>
+          </div>
+        </section>
+
+        <section class="shots-group">
+          <div class="shots-group-head">
+            <p>03</p>
+            <h3>Road</h3>
+          </div>
+          <div class="shots-gallery shots-gallery-road">
+            <figure class="shots-item"><img src="assets/road/photo1.jpg" alt="Road photo 1"></figure>
+            <figure class="shots-item tall"><img src="assets/road/photo2.jpg" alt="Road photo 2"></figure>
+            <figure class="shots-item wide"><img src="assets/road/photo3.jpg" alt="Road photo 3"></figure>
+            <figure class="shots-item"><img src="assets/road/photo4.jpg" alt="Road photo 4"></figure>
+            <figure class="shots-item"><img src="assets/road/photo5.jpg" alt="Road photo 5"></figure>
+            <figure class="shots-item tall"><img src="assets/road/photo6.jpg" alt="Road photo 6"></figure>
+            <figure class="shots-item wide"><img src="assets/road/photo7.jpg" alt="Road photo 7"></figure>
+          </div>
+        </section>
+
+        <section class="shots-group">
+          <div class="shots-group-head">
+            <p>04</p>
+            <h3>Mixed</h3>
+          </div>
+          <div class="shots-gallery shots-gallery-mixed">
+            <figure class="shots-item"><img src="assets/images/photo1.jpg" alt="Mixed photo 1"></figure>
+            <figure class="shots-item wide"><img src="assets/images/photo2.jpg" alt="Mixed photo 2"></figure>
+            <figure class="shots-item tall"><img src="assets/images/photo3.jpg" alt="Mixed photo 3"></figure>
+            <figure class="shots-item"><img src="assets/images/photo4.jpg" alt="Mixed photo 4"></figure>
+            <figure class="shots-item"><img src="assets/images/photo5.jpg" alt="Mixed photo 5"></figure>
+            <figure class="shots-item tall"><img src="assets/images/photo6.jpg" alt="Mixed photo 6"></figure>
+            <figure class="shots-item wide"><img src="assets/images/photo7.jpg" alt="Mixed photo 7"></figure>
+            <figure class="shots-item"><img src="assets/images/photo8.jpg" alt="Mixed photo 8"></figure>
+            <figure class="shots-item tall"><img src="assets/mx/photo1.jpg" alt="MX photo 1"></figure>
+            <figure class="shots-item"><img src="assets/mx/photo2.jpg" alt="MX photo 2"></figure>
+            <figure class="shots-item wide"><img src="assets/mx/photo3.jpg" alt="MX photo 3"></figure>
+            <figure class="shots-item"><img src="assets/mx/photo4.jpg" alt="MX photo 4"></figure>
+            <figure class="shots-item"><img src="assets/mx/photo5.jpg" alt="MX photo 5"></figure>
+            <figure class="shots-item wide"><img src="assets/mx/photo6.jpg" alt="MX photo 6"></figure>
+            <figure class="shots-item tall"><img src="assets/mx/photo7.jpg" alt="MX photo 7"></figure>
+            <figure class="shots-item"><img src="assets/mx/photo8.jpg" alt="MX photo 8"></figure>
+          </div>
+        </section>
+      </div>
+
+      <div class="lightbox-viewer" aria-hidden="true" data-lightbox>
+        <button class="lightbox-close" type="button" aria-label="Close photo" data-close-lightbox>Close</button>
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo" data-lightbox-prev>
+          <span>&larr;</span>
+        </button>
+        <figure class="lightbox-frame">
+          <img src="" alt="" data-lightbox-image>
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo" data-lightbox-next>
+          <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-panel" aria-hidden="true" data-about-panel>
+    <div class="shots-backdrop" data-close-about></div>
+    <div class="about-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
+      <div class="about-header">
+        <p class="shots-kicker">personal profile</p>
+        <div class="shots-heading-row">
+          <h2 id="about-title">About me</h2>
+          <button class="shots-close" type="button" aria-label="Close about me" data-close-about>Close</button>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <figure class="about-portrait">
+          <img src="assets/photo.jpg" alt="Portrait of Marc Robiou">
+        </figure>
+
+        <div class="about-copy">
+          <p class="about-intro">I'm Marc Robiou.</p>
+          <p>I’m inspired by cities at night, urban lights, the moon, landscapes with depth, and dark tones that create a real and immersive atmosphere. I aim for every photograph to have character, balance, and a clean, refined, authentic aesthetic.</p>
+          <p>Beyond photography, I’m also interested in web design and creating modern visual experiences, combining creativity and technology to build projects with their own identity.</p>
+          <p>My focus is not simply taking photos, but creating images that convey atmosphere, presence, and emotion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find-panel" aria-hidden="true" data-find-panel>
+    <div class="shots-backdrop" data-close-find></div>
+    <div class="find-dialog" role="dialog" aria-modal="true" aria-labelledby="find-title">
+      <div class="about-header">
+        <p class="shots-kicker">contact</p>
+        <div class="shots-heading-row">
+          <h2 id="find-title">Find me</h2>
+          <button class="shots-close" type="button" aria-label="Close find me" data-close-find>Close</button>
+        </div>
+      </div>
+
+      <div class="find-layout">
+        <div class="find-intro">
+          <p class="about-intro">Let&apos;s connect.</p>
+          <p class="find-text">You can reach me directly by phone or find my work and projects on Instagram and GitHub.</p>
+        </div>
+
+        <div class="find-links">
+          <a class="find-card" href="tel:+18297637272">
+            <span class="find-label">Phone</span>
+            <strong>+1 829 763 7272</strong>
+          </a>
+          <a class="find-card" href="https://www.instagram.com/marcrobiou" target="_blank" rel="noreferrer">
+            <span class="find-label">Instagram</span>
+            <strong>@marcrobiou</strong>
+          </a>
+          <a class="find-card" href="https://github.com/MarcRobiou" target="_blank" rel="noreferrer">
+            <span class="find-label">GitHub</span>
+            <strong>MarcRobiou</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scrip.js"></script>
 </body>
 </html>
