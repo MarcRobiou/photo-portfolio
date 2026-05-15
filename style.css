@@ -730,10 +730,10 @@ img {
   }
 
   .photo-b {
-    grid-column: 4 / span 3;
-    grid-row: 1 / span 2;
-    transform: translateY(22px);
-    border-radius: 22px 22px 30px 22px;
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    transform: translateY(-6px);
+    border-radius: 20px 20px 30px 20px;
   }
 
   .photo-c {
@@ -757,13 +757,13 @@ img {
   }
 
   .photo-f {
-    grid-column: 2 / span 3;
-    grid-row: 4;
-    transform: translateY(-6px);
-    border-radius: 20px 20px 30px 20px;
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+    transform: translateY(22px);
+    border-radius: 22px 22px 30px 22px;
   }
 
-  .photo-f img {
+  .photo-b img {
     transform: scale(1.18);
     object-position: center 62%;
   }
